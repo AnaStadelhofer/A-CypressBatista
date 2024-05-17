@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("CreateUser", (name, lastname, email) => {
+    cy.get('#user_name').type(name)
+    cy.get('#user_lastname').type(lastname)
+    cy.get('#user_email').type(email)
+
+    cy.get('.actions').click()
+})
+
+Cypress.Commands.add("CreateFullUser", (name, lastname, email, address, university, profile, gender, age) => {
+    cy.get('#user_name').type(name)
+    cy.get('#user_lastname').type(lastname)
+    cy.get('#user_email').type(email)
+    cy.get('#user_address').type(address)
+    cy.get('#user_university').type(university)
+    cy.get('#user_profile').type(profile)
+    cy.get('#user_gender').type(gender)
+    cy.get('#user_age').type(age)
+    cy.get('.actions').click()
+})
+
