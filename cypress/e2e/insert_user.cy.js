@@ -13,7 +13,7 @@ describe('Validar a funcionalidade de cadastrar usuário', () => {
 
   it('CT 02 -Verificar quando preenchido todos os campos disponíveis', () => {
 
-    cy.CreateFullUser('Ana Carolina', 'Stadelhofer', 'ana@teste.com', 'Comasa - Joinvile', 'Unyleya', 'Quality Assurance', 'Woman', '21')
+    cy.CreateFullUser('Ana Carolina', 'Stadelhofer', 'ana@teste.com', 'Comasa - Joinvile', 'Unyleya', 'Quality Assurance', 'Female', '21')
     cy.get('.light-green').should('be.visible')
 
   })
@@ -27,7 +27,7 @@ describe('Validar a funcionalidade de cadastrar usuário', () => {
 
   it('CT 04 - Verificar quando preenchido os campos porém o usuário volta', () => {
 
-    cy.CreateFullUser('Ana Carolina', 'Stadelhofer', 'ana@teste.com', 'Comasa - Joinvile', 'Unyleya', 'Quality Assurance', 'Woman', '21')
+    cy.CreateFullUser('Ana Carolina', 'Stadelhofer', 'ana@teste.com', 'Comasa - Joinvile', 'Unyleya', 'Quality Assurance', 'Female', '21')
     cy.get('.red').click()
     cy.get('.tamanhodiv2 > .center').should('have.text', 'Lista de Usuários!!')
 
