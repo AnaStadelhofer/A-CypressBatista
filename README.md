@@ -8,6 +8,7 @@ Este reposítorio é de automação do site do Batista utilizando Cypress.
   1. cd caminho/da/pasta/com/o/nome/best_power
   2. docker build -t  imagem_site  .
   3. docker-compose up
+     
 3- Acessar a url http://localhost:3000/
 
 ## Executar o projeto de automação
