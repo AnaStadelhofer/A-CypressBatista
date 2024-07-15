@@ -1,17 +1,20 @@
+# A-CypressBatista
+Este reposítorio é de automação do site do Batista utilizando Cypress.
 
-# TITUTLO
+## Subindo o site de teste
 
-Subindo o site localmente
+1. Cloanr o projeto: git clone https://github.com/brunobatista25/best_power.git
+2. Baixar o Docker
+  1. cd caminho/da/pasta/com/o/nome/best_power
+  2. docker build -t  imagem_site  .
+  3. docker-compose up
+3- Acessar a url http://localhost:3000/
 
-git clone https://github.com/brunobatista25/best_power.git
+## Executar o projeto de automação
 
-cd caminho/da/pasta/com/o/nome/best_power
+1. Clonar o projeto atual: https://github.com/AnaStadelhofer/A-CypressBatista.git
+2. Executar os seguintes comandos:
+   1. Instalar dependências: npm install
+   2. Executar o cypress: npx run cy:open
 
-docker build -t  imagem_site  .
-
-docker-compose up
-
-5 - valide se o site estar no ar acessando o navegador atrávez da url http://localhost:3000/
-
-npm run cy:open
 
